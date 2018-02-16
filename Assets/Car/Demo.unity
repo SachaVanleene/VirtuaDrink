@@ -330,6 +330,10 @@ Prefab:
       propertyPath: m_DynamicOccludee
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100020, guid: cc242e1b48590de4a902b03318771a1a, type: 3}
+      propertyPath: m_Name
+      value: Car
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc242e1b48590de4a902b03318771a1a, type: 3}
   m_IsPrefabParent: 0
