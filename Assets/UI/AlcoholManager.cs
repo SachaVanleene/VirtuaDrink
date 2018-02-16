@@ -87,7 +87,7 @@ namespace UI
         private void UpdateUI(float newRate)
         {
             slider.value = newRate;
-            text.text = newRate + " g";
+            text.text = Math.Round(newRate, 2) + " g";
         }
     }
 }
