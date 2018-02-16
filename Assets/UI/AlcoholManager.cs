@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/*
+ * @author Matthieu Le Boucher <matt.leboucher@gmail.com> 
+ */
 public class AlcoholManager : MonoBehaviour
 {
     public delegate void OnRateChangeDelegate(float newRate);
-    public event OnRateChangeDelegate OnRateChange;
+    public event OnRateChangeDelegate OnAlcoholRateChange;
 
-	/*
+    /*
 	 * The current alcohol rate.
 	 */
     private float alcoholRate;
@@ -28,16 +31,16 @@ public class AlcoholManager : MonoBehaviour
 
             alcoholRate = value;
 
-            if (OnRateChange != null)
-                OnRateChange(alcoholRate);
+            if (OnAlcoholRateChange != null)
+                OnAlcoholRateChange(alcoholRate);
         }
     }
 
-	[Tooltip("The slider reflecting a graphical representation of the alcohol rate.")]
+    [Tooltip("The slider reflecting a graphical representation of the alcohol rate.")]
     [SerializeField]
     private Slider slider;
 
-	[Tooltip("The text displaying the alcohol rate.")]
+    [Tooltip("The text displaying the alcohol rate.")]
     [SerializeField]
     private Text text;
 
@@ -48,7 +51,7 @@ public class AlcoholManager : MonoBehaviour
     void Start()
     {
         alcoholRate = 0.5f;
-        OnRateChange += UpdateUI;
+        OnAlcoholRateChange += UpdateUI;
     }
 
     /// <summary>
@@ -60,7 +63,7 @@ public class AlcoholManager : MonoBehaviour
             AlcoholRate += 0.1f;
     }
 
-	/// <summary>
+    /// <summary>
     /// Updates the alcohol UI part whenever the rate is updated.
     /// </summary>
     private void UpdateUI(float newRate)
