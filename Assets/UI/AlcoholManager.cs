@@ -11,9 +11,6 @@ public class AlcoholManager : MonoBehaviour
     public delegate void OnRateChangeDelegate(float newRate);
     public event OnRateChangeDelegate OnAlcoholRateChange;
 
-    /*
-	 * The current alcohol rate.
-	 */
     private float alcoholRate;
 
     [SerializeField]
