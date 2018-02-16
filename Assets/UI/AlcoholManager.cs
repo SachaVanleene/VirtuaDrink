@@ -9,14 +9,28 @@ namespace UI
 {
     public class AlcoholManager : MonoBehaviour
     {
+        /*
+         * The current user's alcohol rate.
+         */
+        private float alcoholRate;
+        
+        /// <inheritdoc />
         public delegate void OnRateChangeDelegate(float newRate);
+        
+        /*
+         * Event triggered whenever the user's alcohol rate changes.
+         */
         public event OnRateChangeDelegate OnAlcoholRateChange;
 
-        private float alcoholRate;
+        /*
+         * Used for float comparison.
+         */
+        private const float TOLERANCE = 0.01f;
 
-        private static readonly float TOLERANCE = 0.01f;
-
-        public float AlcoholRate
+        /*
+         * Encapsulation to track alcohol rate changes.
+         */
+        private float AlcoholRate
         {
             get
             {
@@ -47,7 +61,7 @@ namespace UI
         /// Start is called on the frame when a script is enabled just before
         /// any of the Update methods is called the first time.
         /// </summary>
-        void Start()
+        private void Start()
         {
             alcoholRate = 0.5f;
             OnAlcoholRateChange += UpdateUI;
@@ -56,10 +70,15 @@ namespace UI
         /// <summary>
         /// This function is called every fixed framerate frame, if the MonoBehaviour is enabled.
         /// </summary>
-        void Update()
+        private void Update()
         {
             if (Input.GetMouseButtonDown(0))
+            {
+                // On left click, increase the alcohol rate.
                 AlcoholRate += 0.1f;
+                
+                // Todo: implement the logic of alcohol rate change.
+            }
         }
 
         /// <summary>
