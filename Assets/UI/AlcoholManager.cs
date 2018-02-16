@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,7 +14,8 @@ public class AlcoholManager : MonoBehaviour
 
     private float alcoholRate;
 
-    [SerializeField]
+    private static readonly float TOLERANCE = 0.01f;
+
     public float AlcoholRate
     {
         get
@@ -23,7 +25,7 @@ public class AlcoholManager : MonoBehaviour
 
         set
         {
-            if (alcoholRate == value)
+            if (Math.Abs(alcoholRate - value) < TOLERANCE)
                 return;
 
             alcoholRate = value;
