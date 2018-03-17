@@ -4,7 +4,7 @@ using System.Collections;
 public class Suspension : MonoBehaviour {
 
 	public Rigidbody rb;
-	public Truck truckScript;
+	public Car truckScript;
 
 	[Header("Suspension settings")]
 	public float springForce;
@@ -20,7 +20,7 @@ public class Suspension : MonoBehaviour {
 
 	// Use this for initialization
 	void Awake() {
-		truckScript = transform.parent.GetComponent<Truck> ();
+		truckScript = transform.parent.GetComponent<Car> ();
 	}
 	
 	// Update is called once per frame
