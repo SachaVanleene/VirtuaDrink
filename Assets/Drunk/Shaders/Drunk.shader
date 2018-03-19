@@ -17,7 +17,7 @@
 
 			sampler2D _MainTex;
 			float _OffsetFactor;
-			float _DisplacementFactor;
+			float _DisplacementFactor;			
 
 			float4 vertex_shader (float4 vertex:POSITION):SV_POSITION
 			{
@@ -27,8 +27,11 @@
 			float4 pixel_shader (float4 vertex:SV_POSITION):COLOR
 			{
 				vector <float,2> uv = vertex.xy / _ScreenParams.xy;
-				uv.x+=cos(uv.y * 2.0 + _Time.g) * _DisplacementFactor;
-				uv.y+=sin(uv.x * 2.0 + _Time.g) * _DisplacementFactor;
+				
+				uv.x += cos(uv.y * 2.0 + _Time.g) * _DisplacementFactor;
+				uv.y += sin(uv.x * 2.0 + _Time.g) * _DisplacementFactor;
+				uv.y = 1-uv.y;
+
 				float offset = sin(_Time.g * 0.5) * _OffsetFactor;    
 				float4 a = tex2D(_MainTex, uv);    
 				float4 b = tex2D(_MainTex, uv - float2(sin(offset), 0.0));    
