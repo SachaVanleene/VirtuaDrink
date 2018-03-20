@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scene/postAcci.unity
+    guid: cce57b0e22e97e54c94e3102093d602c
+  - enabled: 1
+    path: Assets/Scene/Bilan.unity
+    guid: 6e4fbf8024b442d479ea74e8271ce101

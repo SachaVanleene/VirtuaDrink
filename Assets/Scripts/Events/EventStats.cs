@@ -39,6 +39,10 @@ public class EventStats : MonoBehaviour {
         {
             GetComponent<StudentsEvent>().StartEvent();
         }
+        if(eventNum == 3)
+        {
+            GetComponent<LastEvent>().StartEvent();
+        }
         StartCoroutine(WaitForEventToPlay());
     }
 
