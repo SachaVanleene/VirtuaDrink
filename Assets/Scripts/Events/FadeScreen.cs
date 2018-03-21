@@ -18,13 +18,6 @@ public class FadeScreen : MonoBehaviour
     public bool fadedin;
     public bool fadedout;
 
-    // Use this for initialization
-    void Start()
-    {
-
-    }
-
-
     public void FadeIn()
     {
         alpha = 1f;
@@ -39,14 +32,8 @@ public class FadeScreen : MonoBehaviour
         fadedout = true;
     }
 
-    public void Fade()
-    {
-
-    }
-
     void OnGUI()
     {
-
         alpha += fadeDir * fadespeed * Time.deltaTime;
         alpha = Mathf.Clamp01(alpha);
 
@@ -62,19 +49,25 @@ public class FadeScreen : MonoBehaviour
         if(fadedout && alpha == 1)
         {
             fadedout = false;
-            StartCoroutine(SwitchSceneToBilan());
+            StartCoroutine(SwitchToScene(1));
         }
         if (fadedin && alpha == 0)
         {
-            fadedin = false; ;
+            fadedin = false;
+            StartCoroutine(SwitchToScene(0));
         }
-
     }
 
     IEnumerator SwitchSceneToBilan()
     {
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(1);
+    }
+    
+    IEnumerator SwitchToScene(int i)
+    {
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(i);
     }
 
 }

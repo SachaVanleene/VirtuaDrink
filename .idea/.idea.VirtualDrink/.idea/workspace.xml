@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da505055-9011-4394-8ee2-d49c6af25b4d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.VirtualDrink/.idea/contentModel.xml" afterPath="$PROJECT_DIR$/.idea/.idea.VirtualDrink/.idea/contentModel.xml" />
-      <change beforePath="$PROJECT_DIR$/Assets/Car/EasySuspension/RearWheelDrive.cs" afterPath="$PROJECT_DIR$/Assets/Car/EasySuspension/RearWheelDrive.cs" />
+      <change beforePath="$PROJECT_DIR$/Assets/AccidentDetector.cs" afterPath="$PROJECT_DIR$/Assets/AccidentDetector.cs" />
       <change beforePath="$PROJECT_DIR$/Assets/Scene/Driving Car.unity" afterPath="$PROJECT_DIR$/Assets/Scene/Driving Car.unity" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Events/FadeScreen.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Events/FadeScreen.cs" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -79,37 +79,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AccidentDetector.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AccidentDetector.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/AccidentDetector.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="276">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <caret line="12" column="27" lean-forward="false" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
               <folding>
-                <marker date="1521605246209" expanded="true" signature="6:100" ph="..." />
-                <marker date="1521605246209" expanded="true" signature="147:388" ph="{...}" />
-                <marker date="1521605246209" expanded="true" signature="212:302" ph="{...}" />
-                <marker date="1521605246209" expanded="true" signature="348:386" ph="{...}" />
+                <marker date="1521605512200" expanded="true" signature="6:100" ph="..." />
+                <marker date="1521605512200" expanded="true" signature="147:467" ph="{...}" />
+                <marker date="1521605512200" expanded="true" signature="212:288" ph="{...}" />
+                <marker date="1521605512200" expanded="true" signature="334:358" ph="{...}" />
+                <marker date="1521605512200" expanded="true" signature="388:465" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FadeScreen.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FadeScreen.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Events/FadeScreen.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="356">
+              <caret line="32" column="5" lean-forward="false" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
               <folding>
-                <marker date="1521603166533" expanded="false" signature="6:101" ph="..." />
-                <marker date="1521603166533" expanded="true" signature="142:1387" ph="{...}" />
-                <marker date="1521603166533" expanded="true" signature="433:446" ph="{...}" />
-                <marker date="1521603166533" expanded="true" signature="473:552" ph="{...}" />
-                <marker date="1521603166533" expanded="true" signature="579:658" ph="{...}" />
-                <marker date="1521603166533" expanded="true" signature="682:695" ph="{...}" />
-                <marker date="1521603166533" expanded="true" signature="713:1254" ph="{...}" />
-                <marker date="1521603166533" expanded="true" signature="1061:1161" ph="{...}" />
-                <marker date="1521603166533" expanded="true" signature="1196:1247" ph="{...}" />
-                <marker date="1521603166533" expanded="true" signature="1292:1384" ph="{...}" />
+                <marker date="1521605690425" expanded="true" signature="6:101" ph="..." />
+                <marker date="1521605690425" expanded="true" signature="142:1455" ph="{...}" />
+                <marker date="1521605690425" expanded="true" signature="406:485" ph="{...}" />
+                <marker date="1521605690425" expanded="true" signature="512:591" ph="{...}" />
+                <marker date="1521605690425" expanded="true" signature="609:1188" ph="{...}" />
+                <marker date="1521605690425" expanded="true" signature="956:1052" ph="{...}" />
+                <marker date="1521605690425" expanded="true" signature="1087:1182" ph="{...}" />
+                <marker date="1521605690425" expanded="true" signature="1226:1318" ph="{...}" />
+                <marker date="1521605690425" expanded="true" signature="1360:1452" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -134,6 +134,7 @@
         <option value="$PROJECT_DIR$/Assets/Drunk/Shaders/Drunk.shader" />
         <option value="$PROJECT_DIR$/Assets/Car/EasySuspension/RearWheelDrive.cs" />
         <option value="$PROJECT_DIR$/Assets/AccidentDetector.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Events/FadeScreen.cs" />
       </list>
     </option>
   </component>
@@ -216,7 +217,7 @@
       <workItem from="1518805982352" duration="129000" />
       <workItem from="1518806130285" duration="1381000" />
       <workItem from="1521413044534" duration="3320000" />
-      <workItem from="1521603520245" duration="1744000" />
+      <workItem from="1521603520245" duration="2191000" />
     </task>
     <task id="LOCAL-00001" summary="Improves float comparison.">
       <created>1518805871884</created>
@@ -250,7 +251,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6856000" />
+    <option name="totallyTimeSpent" value="7303000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -486,25 +487,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Events/FadeScreen.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <marker date="1521603166533" expanded="false" signature="6:101" ph="..." />
-            <marker date="1521603166533" expanded="true" signature="142:1387" ph="{...}" />
-            <marker date="1521603166533" expanded="true" signature="433:446" ph="{...}" />
-            <marker date="1521603166533" expanded="true" signature="473:552" ph="{...}" />
-            <marker date="1521603166533" expanded="true" signature="579:658" ph="{...}" />
-            <marker date="1521603166533" expanded="true" signature="682:695" ph="{...}" />
-            <marker date="1521603166533" expanded="true" signature="713:1254" ph="{...}" />
-            <marker date="1521603166533" expanded="true" signature="1061:1161" ph="{...}" />
-            <marker date="1521603166533" expanded="true" signature="1196:1247" ph="{...}" />
-            <marker date="1521603166533" expanded="true" signature="1292:1384" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Car/EasySuspension/RearWheelDrive.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="701">
@@ -526,12 +508,31 @@
     <entry file="file://$PROJECT_DIR$/Assets/AccidentDetector.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <caret line="12" column="27" lean-forward="false" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
           <folding>
-            <marker date="1521605246209" expanded="true" signature="6:100" ph="..." />
-            <marker date="1521605246209" expanded="true" signature="147:388" ph="{...}" />
-            <marker date="1521605246209" expanded="true" signature="212:302" ph="{...}" />
-            <marker date="1521605246209" expanded="true" signature="348:386" ph="{...}" />
+            <marker date="1521605512200" expanded="true" signature="6:100" ph="..." />
+            <marker date="1521605512200" expanded="true" signature="147:467" ph="{...}" />
+            <marker date="1521605512200" expanded="true" signature="212:288" ph="{...}" />
+            <marker date="1521605512200" expanded="true" signature="334:358" ph="{...}" />
+            <marker date="1521605512200" expanded="true" signature="388:465" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Events/FadeScreen.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="32" column="5" lean-forward="false" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+          <folding>
+            <marker date="1521605690425" expanded="true" signature="6:101" ph="..." />
+            <marker date="1521605690425" expanded="true" signature="142:1455" ph="{...}" />
+            <marker date="1521605690425" expanded="true" signature="406:485" ph="{...}" />
+            <marker date="1521605690425" expanded="true" signature="512:591" ph="{...}" />
+            <marker date="1521605690425" expanded="true" signature="609:1188" ph="{...}" />
+            <marker date="1521605690425" expanded="true" signature="956:1052" ph="{...}" />
+            <marker date="1521605690425" expanded="true" signature="1087:1182" ph="{...}" />
+            <marker date="1521605690425" expanded="true" signature="1226:1318" ph="{...}" />
+            <marker date="1521605690425" expanded="true" signature="1360:1452" ph="{...}" />
           </folding>
         </state>
       </provider>

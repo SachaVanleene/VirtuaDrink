@@ -1120,6 +1120,7 @@ GameObject:
   - component: {fileID: 1196169916}
   - component: {fileID: 1196169917}
   - component: {fileID: 1196169918}
+  - component: {fileID: 1196169919}
   m_Layer: 0
   m_Name: Front Shock
   m_TagString: Untagged
@@ -1179,6 +1180,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   accidentText: {fileID: 1352333120}
+--- !u!114 &1196169919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1196169914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f750071636764c348b41aca5a0772226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeTexture: {fileID: 2800000, guid: 3cf4ed3ee4f17644c994311c1bf9f591, type: 3}
+  fadespeed: 0.523
+  drawDepth: -1000
+  fadedin: 0
+  fadedout: 0
 --- !u!224 &1206207511 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224757012755767070, guid: c975df7f2522e5c45be8e0b1a1f7aba0,

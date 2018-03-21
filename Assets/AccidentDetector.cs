@@ -10,11 +10,17 @@ public class AccidentDetector : MonoBehaviour
 	private void FixedUpdate()
 	{
 		if (Vector3.Dot(transform.up, Vector3.down) > 0)
-			accidentText.SetActive(true);
+			UponAccident();
 	}
 
 	private void OnTriggerEnter(Collider other)
 	{
+		UponAccident();
+	}
+
+	private void UponAccident()
+	{
 		accidentText.SetActive(true);
+		GetComponent<FadeScreen>().FadeIn();
 	}
 }
