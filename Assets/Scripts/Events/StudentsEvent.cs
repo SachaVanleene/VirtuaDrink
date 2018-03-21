@@ -51,7 +51,8 @@ public class StudentsEvent : MonoBehaviour {
 
     IEnumerator WaitForCrazySound()
     {
-        yield return new WaitForSeconds(cry.clip.length/2);
+        yield return new WaitForSeconds(cry.clip.length + 1);
+        woman.GetComponent<AudioSource>().Play();
         //MakeStudentTerrify();
     }
 	

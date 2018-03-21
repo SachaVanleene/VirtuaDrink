@@ -15,8 +15,8 @@ TagManager:
   - 
   - 
   - Event
-  - 
-  - 
+  - ConeCollider
+  - Player
   - 
   - 
   - 

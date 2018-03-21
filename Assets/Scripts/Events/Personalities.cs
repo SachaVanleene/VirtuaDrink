@@ -9,23 +9,23 @@ public class Personality {
 public static class Personalities {
     private static Dictionary<int, Personality> _conv = new Dictionary<int, Personality> {
         //Personalité 1 (par défaut) : Ernest -> rôle patient
-        {1, new Personality {   titre = "Personnalité N°1",
-                                nom = "Ernest Fringuant",
-                                profession = "Boucher",
-                                age = "32 ans",
-                                description = "Père de famille et vie ordinaire était votre quotidien. Mais tout a basculé le jour où vous avez accidentellement confondu un gigot avec la main d’une cliente. Vous étiez pourtant sûr d’avoir vu ce gigot flotter dans les airs mais rien à faire, personne ne vous croit… Ainsi, vous finissez en asile persuadé d’être sain d’esprit.",
-                                atout = "Aimé des autres patients, ils se confient toujours à vous.",
-                                handicap = "Vous n’êtes pas censé vous échapper, ce n'est pas bien !",
+        {1, new Personality {   titre = "Victime N°1",
+                                nom = "Hervé Tremblay",
+                                profession = "Moniteur d'auto école",
+                                age = "34 ans",
+                                description = "Hervé était un père de famille de 3 enfants.  Hervé était aimé de tous et passioné de footbal américain. Ce jour-là, Hervé revenait de son travail lorsqu'il trouva la mort par votre faute à cause de l'accident que vous avez provoqué. Hervé n'avait rien demandé, vous avez gâché sa vie et celle de sa famille",
+                                atout = "Après la mort de son mari, sa femme Gabrielle tomba en grave dépression et ses enfants ne se remirent jamais de ce drame, cela les a traumatisé à vie. Le plus grand, Sébastien, a même arrêté ses études, il n'était plus capable de les poursuivre.",
+                                handicap = "Par votre faute, Hervé n'a pas eu la chance de survivre",
                                 bouton = "Touche 1 pour accéder au personnage" }
         },
         //Personalité 2 : Jean-Eude -> rôle médecin
-        {2, new Personality {   titre = "Personnalité N°2",
-                                nom = "Jean-Eude Marseault",
-                                profession = "Médecin",
-                                age = "47 ans",
-                                description = "Après de longues années d’études en médecine, vous avez décidé de vous spécialiser dans la chirurgie esthétique. Votre rêve ? Rendre le monde plus beau. Suite à une erreur fatale sur une patiente, vous vous êtes retrouvé sans travail mais vous continuez de côtoyer vos semblables dans la vie de tous les jours en attente de votre retour à l’heure de gloire.",
-                                atout = "Vous êtes un maître du dialogue avec le personnel de l’asile.",
-                                handicap = "Vos talents incomparables sont souvents sollicités par les autres médecins.",
+        {2, new Personality {   titre = "Victimes N°2",
+                                nom = "Marc, Aurore et Julien",
+                                profession = "Etudiants",
+                                age = "21-20-22 ans",
+                                description = "Ce groupe d'amis, étudiant en biologie n'avait aucun problème. De nature très responsable ces derniers n'avaient jamais connu un tel accident",
+                                atout = "Suite à l'accident, Julien n'a pu remonter dans une voiture qu'après 4ans, car il était trop térrorifié. Marc a perdu l'usage de son bras droit pendant un an suite à une triple fracture sur le bras droit. Aurore a été brulée au 3ème degré sur 40 % du corps suite à l'incendie qui s'est déclenché",
+                                handicap = "Fractures temporaires mais cicatrices physiques et psychologiques permanentes, par votre faute ce gorupe d'amis abandonna beaucoup de projets qu'ils auraient voulu faire",
                                 bouton = "Touche 2 pour accéder au personnage" }
         },
         //Personalité 3 : Jack -> rôle garde
