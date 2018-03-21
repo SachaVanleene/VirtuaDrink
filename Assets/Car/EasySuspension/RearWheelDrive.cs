@@ -35,6 +35,9 @@ public class RearWheelDrive : MonoBehaviour {
 	{
 		float angle = maxAngle * Input.GetAxis("Horizontal");
 		float torque = maxTorque * Input.GetAxis("Vertical");
+		
+		// Rotate steering wheel.
+		steeringWheel.transform.Rotate(0, 0, -angle);
 
 		foreach (WheelCollider wheel in wheels)
 		{

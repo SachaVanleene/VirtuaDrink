@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="da505055-9011-4394-8ee2-d49c6af25b4d" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Car/Demo.unity" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Assets/Car/Demo.unity.meta" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Assets/Car/EasySuspension/RearWheelDrive.cs" afterPath="$PROJECT_DIR$/Assets/Car/EasySuspension/RearWheelDrive.cs" />
+      <change beforePath="$PROJECT_DIR$/Assets/HorrorHospitalPackFJM.unitypackage.meta" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Cars/carPackage.unitypackage.meta" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Assets/Package/UI_Fiche_Personne_Atteinte.unitypackage.meta" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scene/postAcci.unity" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scene/postAcci.unity.meta" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Assets/ToolboxAsset/ToolBox.unitypackage.meta" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="AlcoholManager.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/UI/AlcoholManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552">
+              <caret line="24" column="10" lean-forward="false" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+              <folding>
+                <marker date="1518806859509" expanded="true" signature="6:54" ph="..." />
+                <marker date="1518806859509" expanded="true" signature="56:121" ph="/* @author Matthieu Le Boucher &lt;matt.leboucher@gmail.com&gt; ... */" />
+                <marker date="1518806859509" expanded="true" signature="134:2464" ph="{...}" />
+                <marker date="1518806859509" expanded="true" signature="184:2462" ph="{...}" />
+                <marker date="1518806859509" expanded="true" signature="199:257" ph="/* The current user's alcohol rate. ... */" />
+                <marker date="1518806859509" expanded="true" signature="412:495" ph="/* Event triggered whenever the user's alcohol rate changes. ... */" />
+                <marker date="1518806859509" expanded="true" signature="568:620" ph="/* Used for float comparison. ... */" />
+                <marker date="1518806859509" expanded="true" signature="677:747" ph="/* Encapsulation to track alcohol rate changes. ... */" />
+                <marker date="1518806859509" expanded="true" signature="781:1159" ph="{...}" />
+                <marker date="1518806859509" expanded="true" signature="807:871" ph="{...}" />
+                <marker date="1518806859509" expanded="true" signature="888:1149" ph="{...}" />
+                <marker date="1518806859509" expanded="true" signature="1429:1607" ph="/// Start is called on the frame when a script is enabled just before ... " />
+                <marker date="1518806859509" expanded="true" signature="1636:1733" ph="{...}" />
+                <marker date="1518806859509" expanded="true" signature="1743:1877" ph="/// This function is called every fixed framerate frame, if the MonoBehaviour is enabled. ... " />
+                <marker date="1518806859509" expanded="true" signature="1907:2184" ph="{...}" />
+                <marker date="1518806859509" expanded="true" signature="1962:2174" ph="{...}" />
+                <marker date="1518806859509" expanded="true" signature="2194:2300" ph="/// Updates the alcohol UI part whenever the rate is updated. ... " />
+                <marker date="1518806859509" expanded="true" signature="2345:2456" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Drunk.shader" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Drunk/Shaders/Drunk.shader">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="667">
+              <caret line="29" column="16" lean-forward="false" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+              <folding>
+                <marker date="1521418227357" expanded="true" signature="37:212" ph="{...}" />
+                <marker date="1521418227357" expanded="true" signature="225:1217" ph="{...}" />
+                <marker date="1521418227357" expanded="true" signature="236:1214" ph="{...}" />
+                <marker date="1521418227357" expanded="true" signature="250:1205" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RearWheelDrive.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Car/EasySuspension/RearWheelDrive.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="667">
+              <caret line="62" column="44" lean-forward="false" selection-start-line="62" selection-start-column="44" selection-end-line="62" selection-end-column="44" />
+              <folding>
+                <marker date="1521418735263" expanded="false" signature="6:44" ph="..." />
+                <marker date="1521418735263" expanded="true" signature="90:1725" ph="{...}" />
+                <marker date="1521418735263" expanded="true" signature="335:647" ph="{...}" />
+                <marker date="1521418735263" expanded="true" signature="435:644" ph="{...}" />
+                <marker date="1521418735263" expanded="true" signature="537:640" ph="{...}" />
+                <marker date="1521418735263" expanded="true" signature="650:888" ph="/* this is a really simple approach to updating wheels ... */" />
+                <marker date="1521418735263" expanded="true" signature="910:1723" ph="{...}" />
+                <marker date="1521418735263" expanded="true" signature="1147:1720" ph="{...}" />
+                <marker date="1521418735263" expanded="true" signature="1431:1715" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FadeScreen.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Events/FadeScreen.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding>
+                <marker date="1521603166533" expanded="false" signature="6:101" ph="..." />
+                <marker date="1521603166533" expanded="true" signature="142:1387" ph="{...}" />
+                <marker date="1521603166533" expanded="true" signature="433:446" ph="{...}" />
+                <marker date="1521603166533" expanded="true" signature="473:552" ph="{...}" />
+                <marker date="1521603166533" expanded="true" signature="579:658" ph="{...}" />
+                <marker date="1521603166533" expanded="true" signature="682:695" ph="{...}" />
+                <marker date="1521603166533" expanded="true" signature="713:1254" ph="{...}" />
+                <marker date="1521603166533" expanded="true" signature="1061:1161" ph="{...}" />
+                <marker date="1521603166533" expanded="true" signature="1196:1247" ph="{...}" />
+                <marker date="1521603166533" expanded="true" signature="1292:1384" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/UI/AlcoholManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Drunk/Shaders/Drunk.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Car/EasySuspension/RearWheelDrive.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Events/FadeScreen.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/UI/AlcoholManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Drunk/Shaders/Drunk.shader" />
+        <option value="$PROJECT_DIR$/Assets/Car/EasySuspension/RearWheelDrive.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="260" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="VirtualDrink (4 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="da505055-9011-4394-8ee2-d49c6af25b4d" name="Default" comment="" />
+      <created>1518805677465</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1518805677465</updated>
+      <workItem from="1518805682679" duration="282000" />
+      <workItem from="1518805982352" duration="129000" />
+      <workItem from="1518806130285" duration="1381000" />
+      <workItem from="1521413044534" duration="3320000" />
+      <workItem from="1521603520245" duration="188000" />
+    </task>
+    <task id="LOCAL-00001" summary="Improves float comparison.">
+      <created>1518805871884</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1518805871884</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Moves manager to dedicated UI namespace.">
+      <created>1518806439247</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1518806439247</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Refactors manager.">
+      <created>1518806737911</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1518806737911</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Rounds alcohol rate display.">
+      <created>1518806889279</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1518806889279</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="5300000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.115625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Improves float comparison." />
+    <MESSAGE value="Moves manager to dedicated UI namespace." />
+    <MESSAGE value="Refactors manager." />
+    <MESSAGE value="Rounds alcohol rate display." />
+    <option name="LAST_COMMIT_MESSAGE" value="Rounds alcohol rate display." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/UI/AlcoholManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" column="10" lean-forward="false" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+          <folding>
+            <marker date="1518806859509" expanded="true" signature="6:54" ph="..." />
+            <marker date="1518806859509" expanded="true" signature="56:121" ph="/* @author Matthieu Le Boucher &lt;matt.leboucher@gmail.com&gt; ... */" />
+            <marker date="1518806859509" expanded="true" signature="134:2464" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="184:2462" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="199:257" ph="/* The current user's alcohol rate. ... */" />
+            <marker date="1518806859509" expanded="true" signature="412:495" ph="/* Event triggered whenever the user's alcohol rate changes. ... */" />
+            <marker date="1518806859509" expanded="true" signature="568:620" ph="/* Used for float comparison. ... */" />
+            <marker date="1518806859509" expanded="true" signature="677:747" ph="/* Encapsulation to track alcohol rate changes. ... */" />
+            <marker date="1518806859509" expanded="true" signature="781:1159" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="807:871" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="888:1149" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="1429:1607" ph="/// Start is called on the frame when a script is enabled just before ... " />
+            <marker date="1518806859509" expanded="true" signature="1636:1733" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="1743:1877" ph="/// This function is called every fixed framerate frame, if the MonoBehaviour is enabled. ... " />
+            <marker date="1518806859509" expanded="true" signature="1907:2184" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="1962:2174" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="2194:2300" ph="/// Updates the alcohol UI part whenever the rate is updated. ... " />
+            <marker date="1518806859509" expanded="true" signature="2345:2456" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Drunk/Shaders/Drunk.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="29" column="16" lean-forward="false" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+          <folding>
+            <marker date="1521418227357" expanded="true" signature="37:212" ph="{...}" />
+            <marker date="1521418227357" expanded="true" signature="225:1217" ph="{...}" />
+            <marker date="1521418227357" expanded="true" signature="236:1214" ph="{...}" />
+            <marker date="1521418227357" expanded="true" signature="250:1205" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Car/EasySuspension/RearWheelDrive.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1426">
+          <caret line="62" column="44" lean-forward="false" selection-start-line="62" selection-start-column="44" selection-end-line="62" selection-end-column="44" />
+          <folding>
+            <marker date="1521418735263" expanded="false" signature="6:44" ph="..." />
+            <marker date="1521418735263" expanded="true" signature="90:1725" ph="{...}" />
+            <marker date="1521418735263" expanded="true" signature="335:647" ph="{...}" />
+            <marker date="1521418735263" expanded="true" signature="435:644" ph="{...}" />
+            <marker date="1521418735263" expanded="true" signature="537:640" ph="{...}" />
+            <marker date="1521418735263" expanded="true" signature="650:888" ph="/* this is a really simple approach to updating wheels ... */" />
+            <marker date="1521418735263" expanded="true" signature="910:1723" ph="{...}" />
+            <marker date="1521418735263" expanded="true" signature="1147:1720" ph="{...}" />
+            <marker date="1521418735263" expanded="true" signature="1431:1715" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/UI/AlcoholManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1518806859509" expanded="true" signature="6:54" ph="..." />
+            <marker date="1518806859509" expanded="true" signature="56:121" ph="/* @author Matthieu Le Boucher &lt;matt.leboucher@gmail.com&gt; ... */" />
+            <marker date="1518806859509" expanded="true" signature="134:2464" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="184:2462" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="199:257" ph="/* The current user's alcohol rate. ... */" />
+            <marker date="1518806859509" expanded="true" signature="412:495" ph="/* Event triggered whenever the user's alcohol rate changes. ... */" />
+            <marker date="1518806859509" expanded="true" signature="568:620" ph="/* Used for float comparison. ... */" />
+            <marker date="1518806859509" expanded="true" signature="677:747" ph="/* Encapsulation to track alcohol rate changes. ... */" />
+            <marker date="1518806859509" expanded="true" signature="781:1159" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="807:871" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="888:1149" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="1429:1607" ph="/// Start is called on the frame when a script is enabled just before ... " />
+            <marker date="1518806859509" expanded="true" signature="1636:1733" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="1743:1877" ph="/// This function is called every fixed framerate frame, if the MonoBehaviour is enabled. ... " />
+            <marker date="1518806859509" expanded="true" signature="1907:2184" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="1962:2174" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="2194:2300" ph="/// Updates the alcohol UI part whenever the rate is updated. ... " />
+            <marker date="1518806859509" expanded="true" signature="2345:2456" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/UI/AlcoholManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1518806859509" expanded="true" signature="6:54" ph="..." />
+            <marker date="1518806859509" expanded="true" signature="56:121" ph="/* @author Matthieu Le Boucher &lt;matt.leboucher@gmail.com&gt; ... */" />
+            <marker date="1518806859509" expanded="true" signature="134:2464" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="184:2462" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="199:257" ph="/* The current user's alcohol rate. ... */" />
+            <marker date="1518806859509" expanded="true" signature="412:495" ph="/* Event triggered whenever the user's alcohol rate changes. ... */" />
+            <marker date="1518806859509" expanded="true" signature="568:620" ph="/* Used for float comparison. ... */" />
+            <marker date="1518806859509" expanded="true" signature="677:747" ph="/* Encapsulation to track alcohol rate changes. ... */" />
+            <marker date="1518806859509" expanded="true" signature="781:1159" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="807:871" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="888:1149" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="1429:1607" ph="/// Start is called on the frame when a script is enabled just before ... " />
+            <marker date="1518806859509" expanded="true" signature="1636:1733" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="1743:1877" ph="/// This function is called every fixed framerate frame, if the MonoBehaviour is enabled. ... " />
+            <marker date="1518806859509" expanded="true" signature="1907:2184" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="1962:2174" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="2194:2300" ph="/// Updates the alcohol UI part whenever the rate is updated. ... " />
+            <marker date="1518806859509" expanded="true" signature="2345:2456" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/UI/AlcoholManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1518806859509" expanded="true" signature="6:54" ph="..." />
+            <marker date="1518806859509" expanded="true" signature="56:121" ph="/* @author Matthieu Le Boucher &lt;matt.leboucher@gmail.com&gt; ... */" />
+            <marker date="1518806859509" expanded="true" signature="134:2464" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="184:2462" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="199:257" ph="/* The current user's alcohol rate. ... */" />
+            <marker date="1518806859509" expanded="true" signature="412:495" ph="/* Event triggered whenever the user's alcohol rate changes. ... */" />
+            <marker date="1518806859509" expanded="true" signature="568:620" ph="/* Used for float comparison. ... */" />
+            <marker date="1518806859509" expanded="true" signature="677:747" ph="/* Encapsulation to track alcohol rate changes. ... */" />
+            <marker date="1518806859509" expanded="true" signature="781:1159" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="807:871" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="888:1149" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="1429:1607" ph="/// Start is called on the frame when a script is enabled just before ... " />
+            <marker date="1518806859509" expanded="true" signature="1636:1733" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="1743:1877" ph="/// This function is called every fixed framerate frame, if the MonoBehaviour is enabled. ... " />
+            <marker date="1518806859509" expanded="true" signature="1907:2184" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="1962:2174" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="2194:2300" ph="/// Updates the alcohol UI part whenever the rate is updated. ... " />
+            <marker date="1518806859509" expanded="true" signature="2345:2456" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/UI/AlcoholManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" column="10" lean-forward="false" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+          <folding>
+            <marker date="1518806859509" expanded="true" signature="6:54" ph="..." />
+            <marker date="1518806859509" expanded="true" signature="56:121" ph="/* @author Matthieu Le Boucher &lt;matt.leboucher@gmail.com&gt; ... */" />
+            <marker date="1518806859509" expanded="true" signature="134:2464" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="184:2462" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="199:257" ph="/* The current user's alcohol rate. ... */" />
+            <marker date="1518806859509" expanded="true" signature="412:495" ph="/* Event triggered whenever the user's alcohol rate changes. ... */" />
+            <marker date="1518806859509" expanded="true" signature="568:620" ph="/* Used for float comparison. ... */" />
+            <marker date="1518806859509" expanded="true" signature="677:747" ph="/* Encapsulation to track alcohol rate changes. ... */" />
+            <marker date="1518806859509" expanded="true" signature="781:1159" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="807:871" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="888:1149" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="1429:1607" ph="/// Start is called on the frame when a script is enabled just before ... " />
+            <marker date="1518806859509" expanded="true" signature="1636:1733" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="1743:1877" ph="/// This function is called every fixed framerate frame, if the MonoBehaviour is enabled. ... " />
+            <marker date="1518806859509" expanded="true" signature="1907:2184" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="1962:2174" ph="{...}" />
+            <marker date="1518806859509" expanded="true" signature="2194:2300" ph="/// Updates the alcohol UI part whenever the rate is updated. ... " />
+            <marker date="1518806859509" expanded="true" signature="2345:2456" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Temp/Compiled-Custom-Drunk.shader" />
+    <entry file="file://$PROJECT_DIR$/Assets/Drunk/Shaders/Drunk.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="29" column="16" lean-forward="false" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+          <folding>
+            <marker date="1521418227357" expanded="true" signature="37:212" ph="{...}" />
+            <marker date="1521418227357" expanded="true" signature="225:1217" ph="{...}" />
+            <marker date="1521418227357" expanded="true" signature="236:1214" ph="{...}" />
+            <marker date="1521418227357" expanded="true" signature="250:1205" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Events/FadeScreen.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <marker date="1521603166533" expanded="false" signature="6:101" ph="..." />
+            <marker date="1521603166533" expanded="true" signature="142:1387" ph="{...}" />
+            <marker date="1521603166533" expanded="true" signature="433:446" ph="{...}" />
+            <marker date="1521603166533" expanded="true" signature="473:552" ph="{...}" />
+            <marker date="1521603166533" expanded="true" signature="579:658" ph="{...}" />
+            <marker date="1521603166533" expanded="true" signature="682:695" ph="{...}" />
+            <marker date="1521603166533" expanded="true" signature="713:1254" ph="{...}" />
+            <marker date="1521603166533" expanded="true" signature="1061:1161" ph="{...}" />
+            <marker date="1521603166533" expanded="true" signature="1196:1247" ph="{...}" />
+            <marker date="1521603166533" expanded="true" signature="1292:1384" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Car/EasySuspension/RearWheelDrive.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="62" column="44" lean-forward="false" selection-start-line="62" selection-start-column="44" selection-end-line="62" selection-end-column="44" />
+          <folding>
+            <marker date="1521418735263" expanded="false" signature="6:44" ph="..." />
+            <marker date="1521418735263" expanded="true" signature="90:1725" ph="{...}" />
+            <marker date="1521418735263" expanded="true" signature="335:647" ph="{...}" />
+            <marker date="1521418735263" expanded="true" signature="435:644" ph="{...}" />
+            <marker date="1521418735263" expanded="true" signature="537:640" ph="{...}" />
+            <marker date="1521418735263" expanded="true" signature="650:888" ph="/* this is a really simple approach to updating wheels ... */" />
+            <marker date="1521418735263" expanded="true" signature="910:1723" ph="{...}" />
+            <marker date="1521418735263" expanded="true" signature="1147:1720" ph="{...}" />
+            <marker date="1521418735263" expanded="true" signature="1431:1715" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
