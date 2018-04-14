@@ -1,23 +1,15 @@
 fileFormatVersion: 2
-guid: f2291f59a57ca054e9248a5721e0594b
+guid: b5478ec42c573a54ab0475487ae585cd
 timeCreated: 18446744011573954816
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: RoadBlocker
-    100002: //RootNode
-    400000: RoadBlocker
-    400002: //RootNode
-    2300000: RoadBlocker
-    3300000: RoadBlocker
-    4300000: RoadBlocker
-    11100000: //RootNode
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: unnamed
-    second: {fileID: 2100000, guid: 0a293cfdfeaaaed42a14cf36cea90271, type: 2}
+    4300000: Rear_Right_Wheel
+    4300002: Front_Right_Wheel
+    4300004: Rear_Left_Wheel
+    4300006: Front_Left_Wheel
+    4300008: CarBody
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 3

@@ -6,9 +6,11 @@ public class RearWheelDrive : MonoBehaviour {
 	private WheelCollider[] wheels;
 
 	public float maxAngle = 30;
-	public float maxTorque = 300;
+	public float maxTorque = 30000;
 	public GameObject wheelShape;
 	public GameObject steeringWheel;
+
+    public SteeringWheelController steeringWheelController;
 
 	// here we find all the WheelColliders down in the hierarchy
 	public void Start()
@@ -33,11 +35,8 @@ public class RearWheelDrive : MonoBehaviour {
 	// this helps us to figure our which wheels are front ones and which are rear
 	public void Update()
 	{
-		float angle = maxAngle * Input.GetAxis("Horizontal");
+		float angle = -steeringWheelController.outputAngle;
 		float torque = maxTorque * Input.GetAxis("Vertical");
-		
-		// Rotate steering wheel.
-		steeringWheel.transform.Rotate(0, 0, -angle);
 
 		foreach (WheelCollider wheel in wheels)
 		{
@@ -65,6 +64,4 @@ public class RearWheelDrive : MonoBehaviour {
 
 		}
 	}
-
-
 }

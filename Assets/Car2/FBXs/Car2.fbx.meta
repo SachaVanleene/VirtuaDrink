@@ -1,23 +1,28 @@
 fileFormatVersion: 2
-guid: f2291f59a57ca054e9248a5721e0594b
+guid: e33c734676d56ca49a5beaa56645a058
 timeCreated: 18446744011573954816
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: RoadBlocker
-    100002: //RootNode
-    400000: RoadBlocker
-    400002: //RootNode
-    2300000: RoadBlocker
-    3300000: RoadBlocker
-    4300000: RoadBlocker
-    11100000: //RootNode
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: unnamed
-    second: {fileID: 2100000, guid: 0a293cfdfeaaaed42a14cf36cea90271, type: 2}
+    4300000: roue_av_droit
+    4300002: roue_ar_droit
+    4300004: bumper_arriere
+    4300006: bumper_avant
+    4300008: vitres
+    4300010: contour_vitres
+    4300012: roue_av_gauche
+    4300014: roue_ar_gauche
+    4300016: barracuda
+    4300018: pipes
+    4300020: feu
+    4300022: cpu
+    4300024: barracuda_CS
+    4300026: Front_Right_Wheel
+    4300028: Rear_Right_Wheel
+    4300030: Front_Left_Wheel
+    4300032: Rear_Left_Wheel
+    4300034: Car2
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 3
@@ -47,7 +52,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.01
+    globalScale: 0.47
     meshCompression: 0
     addColliders: 0
     importVisibility: 0
