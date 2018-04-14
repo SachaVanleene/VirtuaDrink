@@ -1,0 +1,143 @@
+Waypoints with Slerping.  by MichShire Feb 2015.
+
+History:
+I wanted to use a simple Waypoints script, that could use Vectors [Straight lines] and also with a bit of Slerping [Curves]. 
+
+I originally made this for overhead birds to fly around, and they made large gentle turns as they flew around. 
+
+Next, I am working on a car driving simulation and I want to have traffic in the other lanes, so I needed a waypoint system with curves. I found SPLINES and BEZIER curves, but they have a problem [at least what I found] = once the path is finalized, you cant change the object's SPEED. In this case, I can change the speed while it is running which would be great for traffic.
+
+This is FREEWARE script, and I'll post it on ... http://forum.unity3d.com/  look for michco magic ...
+http://forum.unity3d.com/members/michio-magic.741067/
+
+Within this package, please find the {waypic1.jpg} to reference while I
+describe how to make this work.
+
+================
+Where did I get this? Do you remember the original FPS Tutorial for Unity3d?
+It was published in 2009. It featured some robots with simple AI, and some
+random movement that used "AutoWayPoints" by Unity. This showed how to
+set up the Waypoint.tif texture used in @script ExecuteInEditMode().
+Rather than using random waypoints, and having the enemy AI look for
+the nearest one, I wanted to make waypoints in series to Follow a Path.
+I found that the original script looked for any GameObject that contained
+the Waypoint.js file, which was great... but the waypoints they grabbed
+seemed random in the folder. So my script looks through the PathFolder,
+indexing the waypoints (gameObjects) from the top down, every time. 
+This way, you can re-arrange the first to last waypoints by sorting the
+folder.
+
+================
+Setup:
+I made one folder called Waypoints in the Project window.
+
+There are my two scripts, my (green) arrow model, a floor texture, and the Waypoint.tif, (made by Unity), which needs to be placed in the Project
+window in a folder of its own called Gizmos.
+
+The important file is FollowPath.js, which does all the work.
+
+Next, is the WayPoint.js file which I tried to make do all the work,
+but then realized I can do it with the moving script, which is better.
+I was able to even not use the WayPoint script entirely, but when the
+Waypoint icons were placed on the waypoints remotely with the 
+FollowPath.js, you could not select them because they were just single
+dots (an Empty GameObject with a transform).
+
+Step 1: Create an empty GameObject {Hierarchy/Create/Create Empty}.
+Name them anything you like but I renamed each with Path1, Path2, etc...
+Within the Path1 folder (actually an empty GameObject), create another
+empty GameObject, annd rename it waypoint. Drag and drop the script
+WayPoint.js onto the GameObject in the Hierarchy pane. You can even
+de-select the checkmark because it will render the white wireframe sphere
+and 'W' tif even in editor mode.
+
+Step 2: Duplicate (ctrl-d) the waypoint GameObject a few times and then
+in the Scene window move them around. You'll be able to select them and move them... they are placeholders for their transform POSITION only.
+You won't  see any path lines yet.
+
+Step3:
+Drag the "myarrow" PreFab into the Scene window, set it up with the
+green material if you so choose, and resize it to your liking. You can use 
+your own object or enemy for this if you like. This will be the Gameobject 
+that will move... and Follow the Path you make. Find this GameObject in the
+Hierarchy window, and drag and drop the script FollowPath.js onto it.
+You'll see the FollowPath (Script) in the Inspector window. There is a
+variable that needs to be connected called Path Folder > 
+None (Game Object). Find your Path folder in the Hierachy window and
+drag it onto this space to link it. Once you do that you should see green
+lines rendered connecting some of the waypoints.
+
+==================
+Waypoints:
+You will see that you can select any of the waypoints now easily and 
+move them around. You can delete some directly, or make new ones
+by selecting one and using (ctrl-d) to duplicate. The path you make will
+start with the topmost object in the folder and index down the folder to
+the last one. If you get mixed up you can rename them all... 1,2,3 etc.
+So long as they each have an inactive WaPoint.js, they will be visible.
+
+===================
+Using the script:
+- If you can see the green lines, you can play the game and watch your
+Object follow the path.  You will now notice that when in edit mode, that
+when the lines cross through an object in the scene, it turns red to give
+you a warning. This does not stop the Object from going along this 
+path segment though.
+ 
+- If you select Closed Loop, then a blue line will connect the last item 
+with the first. This will also be red if blocked by an Object.
+
+- If you select PingPong, then your Object will switch 180 degrees, and
+follow the path in reverse when reaching the ends.
+- Show Paths can be de-selected to see what it looks like without lines.
+
+Platforms:
+The above modes are great for machine-like Objects (like platforms) that
+need to move rigidly, with no curving. 
+Hint: If you want to go up at an angle and you find the platform tilting, you
+can make an intermediate empty GameObject that does the Following,
+and you mimic the POSITION only, not the rotation, by using :
+yourObject.transform.position = movingObject,transform.position;
+If you make it a child of the first Object it will rotate because the parent 
+rotates, so you have to make it a seperate object... OR set your rotation
+manually with code like:  transform.rotation.x = 0 , etc....
+
+Slerping:
+This is a simple idea that can make an Object look more graceful and real.
+
+- If Use Slerp is selected, you will notice that when you run the program 
+(play the game) you'll see a magenta path drawn so that you can see the path
+that the Object will actually make. The length of segments it shows you 
+can be adjusted with Slerp Segments.
+
+- Slerp Point is the actual trick here. It uses a number derived from how
+close it is to the current waypoint before it slerps toward the nect waypoint.
+If the whole current green line is a value of 1.0, then a value of 0.01 is 
+very close to the end, and will make a tight turn. A value of 0.4 is 40 percent
+along the path and will make a very wide turn.
+
+Fiddle with the settings and speed until you get it the way you like. You can turn off Show Paths when you are done with editing the path. You will 
+also want to not show the Slerp path when it is complete. This will speed
+up execution of the program.
+
+If you want your enemy to follow the path, it is better to follow the Unity
+example and use a Character Controller and using SimpleMove, rather than directly using Translate or Vector3.Forward.
+To keep it grounded , use Rigidbody and check "Use Gravity". 
+ 
+======================
+Final words:
+Of course you can go in and edit this script to your own liking,
+and hopefully learn lots of little new things about coding for Unity 3d.
+Please give me credit if you add onto it and re-publish it, or have  great
+new idea for it. It took me several days to tweak this thing to work so far.
+If you use this and build upon it, email me a zip file so I can see it too :)
+
+Hope this gives you lots of ideas on how to make your Objects move!
+
+- Michco.
+www.3dmagicgames.com  **
+
+** as of Feb 2015 I only have my Warehouse game published.
+My Zombies Arise game is done, but have to tweak it until I can make
+a WebPlayer build of it, that works, to publish on my website.
+  
