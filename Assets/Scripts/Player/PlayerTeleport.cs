@@ -17,7 +17,7 @@ public class PlayerTeleport : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (canTeleport)
+       /* if (canTeleport)
         {
             if (Input.GetKeyDown(KeyCode.RightArrow))
             {
@@ -35,7 +35,7 @@ public class PlayerTeleport : MonoBehaviour {
                     this.transform.position = TeleportPoint[pos].transform.position;
                 }
             }
-        }
+        }*/
 	}
 
 }
