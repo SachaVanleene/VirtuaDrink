@@ -18,8 +18,31 @@ public class FadeScreen : MonoBehaviour
     public bool fadedin;
     public bool fadedout;
 
+    public float _fadeDuration;
+
+    public void Start()
+    {
+        FadeFromBlack();
+    }
+
+    private void FadeToBlack()
+    {
+        //set start color
+        SteamVR_Fade.Start(Color.clear, 0f);
+        //set and start fade to
+        SteamVR_Fade.Start(Color.black, _fadeDuration);
+    }
+    private void FadeFromBlack()
+    {
+        //set start color
+        SteamVR_Fade.View(Color.black, 0f);
+        //set and start fade to
+        SteamVR_Fade.View(Color.clear, _fadeDuration);
+    }
+
     public void FadeIn()
     {
+        FadeFromBlack();
         alpha = 1f;
         fadeDir = -1f;
         fadedin = true;
@@ -27,6 +50,7 @@ public class FadeScreen : MonoBehaviour
 
     public void FadeOut()
     {
+        FadeToBlack();
         alpha = 0f;
         fadeDir = 1f;
         fadedout = true;

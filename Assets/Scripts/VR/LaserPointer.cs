@@ -36,6 +36,16 @@ public class LaserPointer : MonoBehaviour {
 
     public bool canTeleport;
 
+    private bool close;
+
+    private GameObject go_button;
+
+    private GameObject previous_champ;
+
+    Vector3 previous_position;
+
+    private int nb_iter_smooth;
+
 
     //UI Handle
     public LayerMask uiMask;
@@ -50,6 +60,12 @@ public class LaserPointer : MonoBehaviour {
         trackedObj = GetComponent<SteamVR_TrackedObject>();
 
         canTeleport = true;
+
+        previous_champ = null;
+
+        nb_iter_smooth = 0;
+
+        close = false;
     }
 
     // Use this for initialization
@@ -88,9 +104,12 @@ public class LaserPointer : MonoBehaviour {
         // 3
         Vector3 difference = cameraRigTransform.position - headTransform.position;
         // 4
-        difference.y = 0;
+        difference.y = 1;
         // 5
         cameraRigTransform.position = hitPoint + difference;
+
+        //cameraRigTransform.transform.position = new Vector3(cameraRigTransform.position.x, 0f, cameraRigTransform.position.z);
+        
     }
 
 
@@ -114,6 +133,13 @@ public class LaserPointer : MonoBehaviour {
                         teleportReticleTransform.position = hitPoint + teleportReticleOffset;
                         // 3
                         shouldTeleport = true;
+                    } else
+                    {
+                        hitPoint = hit.point;
+                        ShowLaser(hit);
+                        reticle.SetActive(false);
+                        shouldTeleport = false;
+                        
                     }
                 }
             }
@@ -134,6 +160,7 @@ public class LaserPointer : MonoBehaviour {
         {
             if (Controller.GetPress(SteamVR_Controller.ButtonMask.Touchpad))
             {
+                close = false;
                 RaycastHit hit;
                 if (Physics.Raycast(trackedObj.transform.position, transform.forward, out hit, 100))
 
@@ -144,14 +171,21 @@ public class LaserPointer : MonoBehaviour {
                     if (hit.transform.gameObject.tag == "CloseButton")
                     {
                         SteamVR_Controller.Input((int)trackedObj.index).TriggerHapticPulse(500);
+                        close = true;
+                        go_button = hit.transform.gameObject;
                         if (Controller.GetHairTriggerDown())
                         {
                             hit.transform.gameObject.GetComponent<Button>().onClick.Invoke();
                         }
+                        if (previous_champ != null)
+                        {
+                            previous_champ.GetComponent<CanevasInteraction>().hit = false;
+                            previous_champ.transform.localPosition = previous_position;
+                        }
                     }
                     if (hit.transform.gameObject.tag == "Champ")
                     {
-                        hit.transform.gameObject.GetComponent<Image>().color = Color.blue;
+                        HandleChampHitByRay(hit.transform.gameObject);
                     }
                 }
 
@@ -159,7 +193,66 @@ public class LaserPointer : MonoBehaviour {
             if (Controller.GetPressUp(SteamVR_Controller.ButtonMask.Touchpad))
             {
                 laser.SetActive(false);
+                if (close)
+                {
+                    go_button.GetComponent<Button>().onClick.Invoke();
+                    close = false;
+                }
             }
         }
     }
+
+    void HandleChampHitByRay(GameObject go)
+    {
+        if (previous_champ != null)
+        {
+            if (!GameObject.ReferenceEquals(previous_champ, go))
+            {
+                                        SteamVR_Controller.Input((int)trackedObj.index).TriggerHapticPulse(500);
+
+                previous_champ.GetComponent<CanevasInteraction>().hit = false;
+                previous_champ.transform.localPosition = previous_position;
+
+                go.GetComponent<CanevasInteraction>().hit = true;
+                previous_position = go.transform.localPosition;
+                previous_champ = go;
+                nb_iter_smooth = 0;
+                StartSmooth(go);
+            }
+        } else
+        {
+            go.GetComponent<CanevasInteraction>().hit = true;
+            previous_position = go.transform.localPosition;
+            previous_champ = go;
+            nb_iter_smooth = 0;
+            StartSmooth(go);
+        }
+
+    }
+
+    void StartSmooth(GameObject go)
+    {
+        if (nb_iter_smooth < 10)
+        {
+            //StartCoroutine(Smooth(go));
+            Smooth(go);
+        }
+    }
+
+    void Smooth(GameObject go)
+    {
+        go.transform.localPosition = new Vector3(go.transform.localPosition.x, go.transform.localPosition.y, go.transform.localPosition.z - 4f);
+        //go.transform.localPosition = go.transform.localPosition - 4f * go.transform.forward;
+        nb_iter_smooth += 1;
+        StartSmooth(go);
+    }
+
+    IEnumerator Smooth2(GameObject go)
+    {
+        yield return new WaitForSeconds(0.1f);
+        go.transform.localPosition = go.transform.localPosition - 1f * go.transform.forward;
+        nb_iter_smooth += 1;
+        StartSmooth(go);
+    }
+
 }

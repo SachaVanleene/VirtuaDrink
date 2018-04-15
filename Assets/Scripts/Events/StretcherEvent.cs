@@ -9,6 +9,7 @@ public class StretcherEvent : MonoBehaviour   {
     AudioSource pain;
     Animator anim;
 
+    bool shakeControllers;
 
     private void Awake()
     {
@@ -24,8 +25,19 @@ public class StretcherEvent : MonoBehaviour   {
 
     IEnumerator CryThenDie()
     {
+        shakeControllers = true;
         yield return new WaitForSeconds(pain.clip.length);
+        shakeControllers = false;
         anim.SetTrigger("dead");
+    }
+
+    private void Update()
+    {
+        if (shakeControllers)
+        {
+            SteamVR_Controller.Input(3).TriggerHapticPulse(3000);
+            SteamVR_Controller.Input(4).TriggerHapticPulse(3000);
+        }
     }
 
 }
