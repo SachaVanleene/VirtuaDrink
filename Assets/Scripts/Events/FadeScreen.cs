@@ -46,7 +46,13 @@ public class FadeScreen : MonoBehaviour
         StartCoroutine(SwitchToScene(scene));
     }
 
- 
+    public void FadeOutVR(string scene)
+    {
+        FadeToBlack();
+        StartCoroutine(SwitchToScene(scene));
+    }
+
+
 
     public void FadeIn()
     {
@@ -97,6 +103,12 @@ public class FadeScreen : MonoBehaviour
     }
     
     IEnumerator SwitchToScene(int i)
+    {
+        yield return new WaitForSeconds(4f);
+        SceneManager.LoadScene(i);
+    }
+
+    IEnumerator SwitchToScene(string i)
     {
         yield return new WaitForSeconds(4f);
         SceneManager.LoadScene(i);

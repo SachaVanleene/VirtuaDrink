@@ -3,8 +3,8 @@
 	Properties
 	{
 		_MainTex ("Texture", 2D) = "black" {}
-		_OffsetFactor ("Offset factor", Range(0.01, 0.05)) = 0.01
-		_DisplacementFactor ("Displacement factor", Range(0.01, 0.1)) = 0.05
+		_OffsetFactor ("Offset factor", Range(0.01, 0.05)) = 0
+		_DisplacementFactor ("Displacement factor", Range(0.01, 0.1)) = 0
 	}
 	Subshader
 	{
