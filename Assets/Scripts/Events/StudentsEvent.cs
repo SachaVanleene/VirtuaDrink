@@ -12,6 +12,8 @@ public class StudentsEvent : MonoBehaviour {
     public GameObject car;
     public Light light;
 
+    public EventHandler eh;
+
     bool bigflame;
     bool smallflame;
 
@@ -82,8 +84,8 @@ public class StudentsEvent : MonoBehaviour {
 	void Update () {
         if (bigflame)
         {
-            SteamVR_Controller.Input(3).TriggerHapticPulse(3000);
-            SteamVR_Controller.Input(4).TriggerHapticPulse(3000);
+            SteamVR_Controller.Input((int) eh.index_droit.index).TriggerHapticPulse(3000);
+            SteamVR_Controller.Input((int)eh.index_gauche.index).TriggerHapticPulse(3000);
         }
         /*if (smallflame)
         {

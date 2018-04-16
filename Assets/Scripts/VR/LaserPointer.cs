@@ -170,6 +170,7 @@ public class LaserPointer : MonoBehaviour {
                 {
                     if (hit.transform.gameObject.tag == "CloseButton")
                     {
+                        //Debug.LogError((int)trackedObj.index);
                         SteamVR_Controller.Input((int)trackedObj.index).TriggerHapticPulse(500);
                         close = true;
                         go_button = hit.transform.gameObject;
