@@ -9,6 +9,8 @@ public class StretcherEvent : MonoBehaviour   {
     AudioSource pain;
     Animator anim;
 
+    public EventHandler eh;
+
     bool shakeControllers;
 
     private void Awake()
@@ -35,8 +37,8 @@ public class StretcherEvent : MonoBehaviour   {
     {
         if (shakeControllers)
         {
-            SteamVR_Controller.Input(3).TriggerHapticPulse(3000);
-            SteamVR_Controller.Input(4).TriggerHapticPulse(3000);
+            SteamVR_Controller.Input((int)eh.index_droit.index).TriggerHapticPulse(3000);
+            SteamVR_Controller.Input((int)eh.index_gauche.index).TriggerHapticPulse(3000);
         }
     }
 

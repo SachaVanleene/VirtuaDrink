@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/DrinkingScene.unity
+    path: Assets/Scene/DrinkingScene.unity
     guid: b1ab5ca8e96fcaa469a982775565d4d5
   - enabled: 1
-    path: Assets/Car/Demo.unity
+    path: Assets/Scene/Demo.unity
     guid: a15f7f182e725a04ebde6e0394f2c2be
   - enabled: 1
     path: Assets/Scene/Post Accident.unity

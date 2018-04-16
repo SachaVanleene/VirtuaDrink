@@ -17,6 +17,9 @@ public class DrinkingManager : MonoBehaviour {
     public bool gachette_right_pressed;
     public bool gachette_left_pressed;
 
+    public int right_controller_index;
+    public int left_controller_inderx;
+
     static public GameObject getChildGameObject(GameObject fromGameObject, string withName)
     {
         Transform[] ts = fromGameObject.transform.GetComponentsInChildren<Transform>(true);
@@ -28,6 +31,10 @@ public class DrinkingManager : MonoBehaviour {
     {
         sceneSwitched = false;
         ui_quantite = getChildGameObject(this.gameObject, "AlcoolQuantity");
+
+        gachette_left_pressed = false;
+
+        gachette_right_pressed = false;
     }
 
     public void AddAlcohol(float quantity)
@@ -49,10 +56,10 @@ public class DrinkingManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(gachette_left_pressed && gachette_left_pressed && !sceneSwitched)
+		if(gachette_left_pressed && gachette_right_pressed && !sceneSwitched)
         {
-            SteamVR_Controller.Input(3).TriggerHapticPulse(500);
-            SteamVR_Controller.Input(4).TriggerHapticPulse(500);
+            SteamVR_Controller.Input(right_controller_index).TriggerHapticPulse(500);
+            SteamVR_Controller.Input(left_controller_inderx).TriggerHapticPulse(500);
             time += Time.deltaTime;
         }
         else
@@ -63,7 +70,7 @@ public class DrinkingManager : MonoBehaviour {
         {
             AlcoolQuantity.alcool_quantity = alcohol;
             sceneSwitched = true;
-            m_camera.GetComponent<FadeScreen>().FadeOutVR(1);
+            m_camera.GetComponent<FadeScreen>().FadeOutVR("Scene/Demo");
         }
 	}
 }

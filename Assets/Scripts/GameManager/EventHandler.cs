@@ -16,6 +16,9 @@ public class EventHandler : MonoBehaviour {
     // Vive material reference
     public GameObject manette1;
     public GameObject manette2;
+    public SteamVR_TrackedObject index_droit;
+    public SteamVR_TrackedObject index_gauche;
+
 
 	// Use this for initialization
 	void Start () {
@@ -27,7 +30,10 @@ public class EventHandler : MonoBehaviour {
         movement = player.GetComponent<PlayerMovement>();
         initSpeed = movement.speed;
         pt = player.GetComponent<PlayerTeleport>();
-	}
+
+        index_droit = manette1.GetComponent<SteamVR_TrackedObject>();
+        index_gauche = manette2.GetComponent<SteamVR_TrackedObject>();
+    }
 	
 	// Update is called once per frame
 	void Update () {

@@ -116,13 +116,17 @@ public class ControllerGrabObject : MonoBehaviour {
             {
                 GrabObject();
             }
-            if (gameObject.name.Contains("right"))
+            if (gameObject.name == "Controller (right)")
             {
+                //Debug.LogError("je passe right");
                 script_dm.gachette_right_pressed = true;
+                script_dm.right_controller_index = (int)trackedObj.index;
             }
-            else
+            if (gameObject.name == "Controller (left)")
             {
+                //Debug.LogError("je passe left");
                 script_dm.gachette_left_pressed = true;
+                script_dm.left_controller_inderx = (int)trackedObj.index;
             }
         }
         if (Controller.GetHairTriggerUp())
@@ -131,11 +135,11 @@ public class ControllerGrabObject : MonoBehaviour {
             {
                 ReleaseObject();
             }
-            if (gameObject.name.Contains("right"))
+            if (gameObject.name == "Controller (right)")
             {
                 script_dm.gachette_right_pressed = false;
             }
-            else
+            if (gameObject.name == "Controller (left)")
             {
                 script_dm.gachette_left_pressed = false;
             }
