@@ -17,6 +17,8 @@ public class StudentsEvent : MonoBehaviour {
     bool bigflame;
     bool smallflame;
 
+    bool shakeStart;
+
     bool crystart;
     // Use this for initialization
     void Start () {
@@ -27,6 +29,14 @@ public class StudentsEvent : MonoBehaviour {
     {
         PlaySond();
         StartCoroutine(WaitSoundToBePlay());
+        StartCoroutine(ShakeController());
+    }
+
+    IEnumerator ShakeController()
+    {
+        shakeStart = true;
+        yield return new WaitForSeconds(1f);
+        shakeStart = false;
     }
 
     void PlaySond()
@@ -87,10 +97,10 @@ public class StudentsEvent : MonoBehaviour {
             SteamVR_Controller.Input((int) eh.index_droit.index).TriggerHapticPulse(3000);
             SteamVR_Controller.Input((int)eh.index_gauche.index).TriggerHapticPulse(3000);
         }
-        /*if (smallflame)
+        if (shakeStart)
         {
-            SteamVR_Controller.Input(3).TriggerHapticPulse(500);
-            SteamVR_Controller.Input(4).TriggerHapticPulse(500);
-        }*/
+            SteamVR_Controller.Input((int)eh.index_droit.index).TriggerHapticPulse(1000);
+            SteamVR_Controller.Input((int)eh.index_gauche.index).TriggerHapticPulse(1000);
+        }
 	}
 }
