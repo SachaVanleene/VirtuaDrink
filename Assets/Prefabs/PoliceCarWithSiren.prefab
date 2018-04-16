@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4903872087809530}
   - component: {fileID: 108333420215511464}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: BlueLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,7 +37,7 @@ GameObject:
   - component: {fileID: 4541479236736510}
   - component: {fileID: 33614972700461728}
   - component: {fileID: 23161248186494392}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: front_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   - component: {fileID: 4460454441394316}
   - component: {fileID: 114650168773500582}
   - component: {fileID: 82274545318018100}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Siren
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   - component: {fileID: 4483929977360664}
   - component: {fileID: 33976390941899130}
   - component: {fileID: 23974955619810844}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: front_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 4579821156780428}
   - component: {fileID: 33661264837627564}
   - component: {fileID: 23654200839285908}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 33766721009029266}
   - component: {fileID: 136820414417558660}
   - component: {fileID: 23429071505586248}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121,7 +121,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4320576402718756}
-  m_Layer: 0
+  - component: {fileID: 65398407114594822}
+  m_Layer: 12
   m_Name: PoliceCarWithSiren
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,7 +139,7 @@ GameObject:
   - component: {fileID: 4568303985366780}
   - component: {fileID: 33269481617641892}
   - component: {fileID: 23726718949810134}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: rear_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -156,7 +157,7 @@ GameObject:
   - component: {fileID: 33710981261209970}
   - component: {fileID: 136650878292487036}
   - component: {fileID: 23927368842496048}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +174,7 @@ GameObject:
   - component: {fileID: 4210161139689722}
   - component: {fileID: 33753179314759796}
   - component: {fileID: 23186525470790410}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: rear_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,7 +190,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4350137850520632}
   - component: {fileID: 108786762000260672}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: RedLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -636,6 +637,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1435969691526396}
   m_Mesh: {fileID: 4300006, guid: f076ee678aaa8ca4e9fa090f47f27d3f, type: 3}
+--- !u!65 &65398407114594822
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1521737474469072}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.9119701, y: 2.039114, z: 7.1099243}
+  m_Center: {x: -0.08312893, y: 0.8520727, z: -0.10391235}
 --- !u!82 &82274545318018100
 AudioSource:
   m_ObjectHideFlags: 1
@@ -654,7 +667,7 @@ AudioSource:
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 1
+  DopplerLevel: 0
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
@@ -685,7 +698,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 2
       time: 0
-      value: 0.9
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0

@@ -11,6 +11,11 @@ public class StudentsEvent : MonoBehaviour {
     public ParticleSystem flame;
     public GameObject car;
     public Light light;
+
+    bool bigflame;
+    bool smallflame;
+
+    bool crystart;
     // Use this for initialization
     void Start () {
         cry = GetComponent<AudioSource>();
@@ -42,8 +47,11 @@ public class StudentsEvent : MonoBehaviour {
         flame.startSpeed = 3f;
         light.intensity = 20;
         light.enabled = true;
+        bigflame = true;
         flame.Play();
         yield return new WaitForSeconds(1f);
+        bigflame = false;
+        smallflame = true;
         light.intensity = 10;
         flame.startSpeed = 1.5f;
         StopWomanAndLaunchCrazySound();
@@ -52,6 +60,7 @@ public class StudentsEvent : MonoBehaviour {
     IEnumerator WaitForCrazySound()
     {
         yield return new WaitForSeconds(cry.clip.length + 1);
+        smallflame = false;
         woman.GetComponent<AudioSource>().Play();
         //MakeStudentTerrify();
     }
@@ -71,6 +80,15 @@ public class StudentsEvent : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		
+        if (bigflame)
+        {
+            SteamVR_Controller.Input(3).TriggerHapticPulse(3000);
+            SteamVR_Controller.Input(4).TriggerHapticPulse(3000);
+        }
+        /*if (smallflame)
+        {
+            SteamVR_Controller.Input(3).TriggerHapticPulse(500);
+            SteamVR_Controller.Input(4).TriggerHapticPulse(500);
+        }*/
 	}
 }

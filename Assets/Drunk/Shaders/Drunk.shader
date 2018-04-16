@@ -3,8 +3,8 @@
 	Properties
 	{
 		_MainTex ("Texture", 2D) = "black" {}
-		_OffsetFactor ("Offset factor", Range(0.01, 0.05)) = 0.01
-		_DisplacementFactor ("Displacement factor", Range(0.01, 0.1)) = 0.05
+		_OffsetFactor ("Offset factor", Range(0.01, 0.05)) = 0
+		_DisplacementFactor ("Displacement factor", Range(0.01, 0.1)) = 0
 	}
 	Subshader
 	{
@@ -30,7 +30,7 @@
 				
 				uv.x += cos(uv.y * 2.0 + _Time.g) * _DisplacementFactor;
 				uv.y += sin(uv.x * 2.0 + _Time.g) * _DisplacementFactor;
-				uv.y = 1-uv.y;
+				//uv.y = 1-uv.y;
 
 				float offset = sin(_Time.g * 0.5) * _OffsetFactor;    
 				float4 a = tex2D(_MainTex, uv);    

@@ -146,6 +146,7 @@ MonoBehaviour:
   maxTorque: 1000
   wheelShape: {fileID: 0}
   steeringWheel: {fileID: 1804608972}
+  steeringWheelController: {fileID: 0}
 --- !u!114 &101605311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1180,6 +1181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   accidentText: {fileID: 1352333120}
+  m_camera: {fileID: 0}
 --- !u!114 &1196169919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1196,6 +1198,7 @@ MonoBehaviour:
   drawDepth: -1000
   fadedin: 0
   fadedout: 0
+  _fadeDuration: 0
 --- !u!224 &1206207511 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224757012755767070, guid: c975df7f2522e5c45be8e0b1a1f7aba0,
