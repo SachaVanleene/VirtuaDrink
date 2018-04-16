@@ -25,7 +25,7 @@ public class LastEvent : MonoBehaviour {
 
     public void StartEvent()
     {
-        camera.GetComponent<FadeScreen>().FadeOut();
+        camera.GetComponent<FadeScreen>().FadeOutVR(3);
 
         doctor1.GetComponent<Animator>().SetBool("walk", true);
         doctor2.GetComponent<Animator>().SetBool("walk", true);

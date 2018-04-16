@@ -40,6 +40,14 @@ public class FadeScreen : MonoBehaviour
         SteamVR_Fade.View(Color.clear, _fadeDuration);
     }
 
+    public void FadeOutVR(int scene)
+    {
+        FadeToBlack();
+        StartCoroutine(SwitchToScene(scene));
+    }
+
+ 
+
     public void FadeIn()
     {
         FadeFromBlack();
@@ -70,16 +78,16 @@ public class FadeScreen : MonoBehaviour
 
         GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), fadeTexture);
 
-        if(fadedout && alpha == 1)
+        /*if(fadedout && alpha == 1)
         {
             fadedout = false;
-            StartCoroutine(SwitchToScene(1));
+            StartCoroutine(SwitchToScene(3));
         }
         if (fadedin && alpha == 0)
         {
             fadedin = false;
             StartCoroutine(SwitchToScene(0));
-        }
+        }*/
     }
 
     IEnumerator SwitchSceneToBilan()
@@ -90,7 +98,7 @@ public class FadeScreen : MonoBehaviour
     
     IEnumerator SwitchToScene(int i)
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(4f);
         SceneManager.LoadScene(i);
     }
 
