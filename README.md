@@ -9,10 +9,10 @@ Projet réalisé pour le cours de 3D VR à l'UQAC
 	- Ensemble des intéractions VR avec vos manettes Vive, comme la mécanique pour consommer de l'acool qui réalise un retour haptique lorsque vous êtes effectivement entrain de boire etc ...
 	- Intégralité de l'UI
 	- Système de calcul de quantité d'alcool
-  - Pour résumé rapidement tout sauf le design
+  	- Pour résumé rapidement tout sauf le design
 - Seconde scène ou l'on conduit sa voiture
 	- Mise à jour du shader toutes les frames pour qu'à 30 secondes on ressente les effets maximum de notre consommation d'alcool sur la scène précédente.
-  - Input utilisateur pour faire avancer la voiture
+  	- Input utilisateur pour faire avancer la voiture
 	- UI indiquant le temps qui défile, ici une seconde = une minute pour qu'en 30 seconde l'utilisateur resente les effets maximum de sa quantité d'alcool inégéré.
 - Scène poste accidente - Entièrement réaliseé par moi même :
 	- Téléportation via Manette vive
