@@ -41,4 +41,3 @@ Premier projet VR pour moi. Cela m'a appris à prendre en main la librairie Stea
 
 * [Sacha Vanleene](https://github.com/SachaVanleene) - Programmer
 * [Matthieu Le Boucher ](https://github.com/Meight) - Programmer
-* [Thomas Faget](https://github.com/thomasfaget) - Designer
