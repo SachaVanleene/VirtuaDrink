@@ -1,6 +1,6 @@
 # VirtuaDrink - Développé pour le HTC Vive
-Projet pour faire prendre conscience des risque sur la prise d'alcool au volant.
-Projet réalisé pour le cours de 3D VR à l'UQAC
+- Projet pour faire prendre conscience des risque sur la prise d'alcool au volant.
+- Projet réalisé pour le cours de 3D VR à l'UQAC
 
 ![A screenshot](screenshot.png)
 
