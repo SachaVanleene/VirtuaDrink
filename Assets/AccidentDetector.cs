@@ -5,11 +5,11 @@ public class AccidentDetector : MonoBehaviour
 {
 	public GameObject accidentText;
     public GameObject m_camera;
-    FadeScreen script_fade;
+	FadeScreen fadingScript;
 
     private void Awake()
     {
-        script_fade = m_camera.GetComponent<FadeScreen>();
+        fadingScript = m_camera.GetComponent<FadeScreen>();
     }
 
     private void FixedUpdate()
@@ -26,6 +26,6 @@ public class AccidentDetector : MonoBehaviour
 	private void UponAccident()
 	{
 		accidentText.SetActive(true);
-        script_fade.FadeOutVR("Scene/Post Accident");
+        fadingScript.FadeOutVR("Scene/Post Accident");
 	}
 }
