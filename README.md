@@ -9,7 +9,6 @@
 	- Ensemble des intéractions VR avec vos manettes Vive, comme la mécanique pour consommer de l'acool qui réalise un retour haptique lorsque vous êtes effectivement entrain de boire etc ...
 	- Intégralité de l'UI
 	- Système de calcul de quantité d'alcool
-  	- Pour résumer rapidement tout sauf le design
 - Seconde scène ou l'on conduit sa voiture :
 	- Mise à jour du shader toutes les frames pour qu'à 30 secondes on ressente les effets maximum de notre consommation d'alcool sur la scène précédente.
   	- Input utilisateur pour faire avancer la voiture
